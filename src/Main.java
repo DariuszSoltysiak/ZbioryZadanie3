@@ -5,15 +5,13 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
         Set<String> imiona = new HashSet<>();
-
         System.out.println("Wpisuj imiona (znak \" - \" konczy wpisywanie)");
         String name = scan.nextLine();
 
         while (!name.equals("-")) {
-            name = scan.nextLine();
             imiona.add(name);
+            name = scan.nextLine();
             if (name.equals("-")) {
                 System.out.println("Wpisano znak \" - \", zakonczon wprowadzanie imion");
             }
